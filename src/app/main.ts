@@ -21,11 +21,23 @@ import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 import {UpgradeModule} from '@angular/upgrade/static';
 import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
+import { HttpClientModule } from '@angular/common/http';
+import { Contact } from './services/contact.resource';
+import { SearchComponent } from './components/search.component';
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 @NgModule({
     imports: [
       BrowserModule,
-      UpgradeModule
+      UpgradeModule,
+      FormsModule,
+      HttpClientModule,
+    ReactiveFormsModule
+     
+    ],
+    declarations: [
+      SearchComponent
     ]
+   
   })
   
   export class AppModule {

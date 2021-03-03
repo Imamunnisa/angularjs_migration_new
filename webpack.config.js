@@ -27,6 +27,7 @@ module.exports = {
             {} // a map of your routes
         )
     ]
+   // devtool: "source-map"
 };
 
 
